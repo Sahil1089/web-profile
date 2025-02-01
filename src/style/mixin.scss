@@ -1,0 +1,49 @@
+@mixin flex($d:row,$jc:center,$i:center,$g:1rem){
+    display: flex;
+    flex-direction: $d;
+
+    justify-content: $jc;
+    align-items: $i;
+    gap: $g;
+}
+
+@mixin square($w:4rem){
+    width: $w;
+    height: $w;
+}
+
+.c1{
+    color:rgb(250,191,0)
+
+}
+.c2{
+color: rgb(127,10 ,124);
+}
+.c3{
+    color: rgb(0,198,205);
+
+}
+.c4{
+    color: rgb(122, 146, 14);
+
+}
+.margin{
+    margin-bottom: 4rem;
+    position: relative;
+    bottom: 5.5rem;
+}
+@mixin heading($spacing:3px ,$weight:300,$case:uppercase){
+    letter-spacing: $spacing;
+    font-weight: $weight;
+    text-transform: $case;
+
+}
+@mixin input($w:100% ,$bgcolor:inherit,$p:1rem,$border:none){
+    width: $w;
+    background-color: $bgcolor;
+    padding: $p;
+    border: $border;
+    outline: none;
+  
+  
+  }
